@@ -11,9 +11,9 @@ import pickle
 import streamlit as st
 
 def pred(input_data):
-    fName = "C:\\Users\\khudd\\Downloads\\trained.sav"
-    fName2 = "C:\\Users\\khudd\\Downloads\\labels"
-    df = pd.read_csv('C:\\Users\\khudd\\Downloads\\spam.csv',encoding='latin-1')
+    fName = "trained.sav"
+    fName2 = "labels"
+    df = pd.read_csv('spam.csv',encoding='latin-1')
     indx = 0
     for i in range(len(df.v2)):
         if df.v2[i] == input_data :
